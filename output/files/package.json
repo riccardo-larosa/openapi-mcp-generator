@@ -1,0 +1,33 @@
+{
+  "name": "files-introduction",
+  "version": "1.0",
+  "description": "MCP Server generated from OpenAPI spec for files-introduction",
+  "private": true,
+  "type": "module",
+  "main": "build/index.js",
+  "files": [
+    "build",
+    "src"
+  ],
+  "scripts": {
+    "start": "node build/index.js",
+    "start:web": "node build/web-server.js",
+    "build": "tsc && chmod 755 build/index.js",
+    "typecheck": "tsc --noEmit",
+    "prestart": "npm run build"
+  },
+  "engines": {
+    "node": ">=20.0.0"
+  },
+  "dependencies": {
+    "@modelcontextprotocol/sdk": "^1.9.0",
+    "axios": "^1.8.4",
+    "dotenv": "^16.4.5",
+    "zod": "^3.24.2",
+    "json-schema-to-zod": "^2.4.1"
+  },
+  "devDependencies": {
+    "@types/node": "^18.19.0",
+    "typescript": "^5.8.3"
+  }
+}
